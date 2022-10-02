@@ -1,0 +1,69 @@
+
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+ <link href="https://kit.fontawesome.com/a076d05399.js" rel="stylesheet">
+ 
+ <div class="login">
+     <div class="p1" [ngStyle]="{color: get_them()}"><b><span  [ngStyle]="{color: getColor()}"> MYGCORD</span>  Sign-Up</b></div>
+     <b><p class="p2" [ngStyle]="{color: get_them()}"> welcome , It’s quick and easy.</p></b>
+    <br>      
+    
+      <tr>
+        <td style="width:75%">
+          <div class="inp1">
+            <input  id="{{inpcolor1}}" type="text" placeholder="Name" class="{{formcontro}}" [(ngModel)]="name">
+          </div>
+        </td>
+
+        <td style="width:20%">
+         <div class="inp2">
+           <input id="{{inpcolor2}}"  type="text" value="#----"  placeholder="#Tag" class="{{formcontro}}"  [(ngModel)]="tag">
+         </div>
+       </td>
+      </tr>
+
+
+
+
+      
+     
+      
+        <br>
+     <div class="inp">
+     <input  id="{{inpcolor1}}" type="email" placeholder='Email' class="{{formcontro}}"  [(ngModel)]="email">
+     <br>
+   
+     <input id="{{inpcolor2}}"  type="{{typepassword}}"   placeholder="Password" class="{{formcontro}}" [(ngModel)]="password">
+     <div class="pass"><i class="{{eye}}" aria-hidden="true" [ngStyle]="{color: get_them()}"  (click)="eyeFunction()" ></i></div>
+     
+    </div>
+
+    
+      &nbsp;<div class="fileinputs">
+      <input type="file" class="file" accept="image/*" #image (change)="upload($event)">
+      <div class="fakefile">
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class=" fa fa-picture-o fa-3x" aria-hidden="true" [ngStyle]="{color: get_them()}" style="font-size: 1.4rem;" > </i>
+      </div>
+    </div>
+    <p class="pimage" [ngStyle]="{color: get_them()}"><u>Import profile picture</u></p> 
+
+    
+     <div class="butt">
+
+        <button  (click)="erroralert(tag,name,email,password)"  class="{{buttoncolor}}"  id="{{button}}" > 
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;Next&nbsp; &nbsp;
+            <i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;</span> 
+        </button>
+    
+    
+     </div>
+    
+     <b><p class="p3" [ngStyle]="{color: get_them()}"> Have an account ?
+      <a  [routerLink]="['/mylogin']" class="a" [ngStyle]="{color: getColor()}">
+      <b> Back </b>
+      </a></p></b>
+     
+     </div>
+     
+  

@@ -1,0 +1,274 @@
+
+.moon{
+    position: fixed;
+    left: 92%;
+    right: 7%;
+    top: 2.06%;
+}
+
+.settings{
+    position: fixed;
+    
+   
+    right: 2%;
+    top: 2%;
+    animation: mymove 20000s infinite;
+}
+
+
+/**@keyframes mymove {
+    50%,50% {transform: rotate(720000deg);}
+}
+**/
+
+
+
+.menu-settings-dark  {
+    width: 170px;
+    height: 120px;
+    background-color: #242526;
+    position: absolute;
+    right: 5px;
+    top: 41px;
+    overflow: hidden;
+    max-height: 0px;
+    box-shadow:  #131313 1.95px 10.95px 20.6px;
+    border-radius: 8px;
+}
+
+
+.settings:hover ~ .menu-settings-dark{
+    transition: max-height 0.5s ease-in;
+ 
+    max-height: 120px;
+    
+}
+
+.menu-settings-dark:hover {
+    transition: max-height 0.5s ease-in;
+
+    max-height: 120px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.menu-settings-white  {
+    width: 170px;
+    height: 120px;
+   
+    background-color:#ffff;
+    position: absolute;
+    right: 5px;
+    top: 41px;
+    overflow: hidden;
+    max-height: 0px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 12.95px 10.6px;
+
+}
+
+
+.settings:hover ~ .menu-settings-white{
+    
+   
+    transition: max-height 0.5s ease-in;
+    max-height: 120px;
+    
+    
+}
+
+.menu-settings-white:hover {
+    
+   
+    transition: max-height 0.5s ease-in;
+    max-height: 120px;
+    
+    
+}
+
+
+
+
+
+#id-menu-settings-green:hover{
+    border-bottom: 3px solid #72b626;
+    border-right : 3px solid #72b626;
+}
+.settings:hover ~ #id-menu-settings-green{
+    border-bottom : 3px solid #72b626;
+    border-right : 3px solid #72b626;
+}
+#id-menu-settings-blue:hover{
+    border-bottom: 3px solid #4169e1;
+    border-right : 3px solid #4169e1;
+}
+.settings:hover ~ #id-menu-settings-blue{
+    border-bottom : 3px solid #4169e1;
+    border-right : 3px solid #4169e1;
+    
+}
+#id-menu-settings-red:hover{
+    border-bottom: 3px solid #da3939;
+    border-right : 3px solid #da3939;
+}
+.settings:hover ~ #id-menu-settings-red{
+    border-bottom : 3px solid #da3939;
+    border-right : 3px solid #da3939;
+}
+#id-menu-settings-pink:hover{
+    border-bottom: 3px solid #fc22fc;
+    border-right : 3px solid #fc22fc;
+}
+.settings:hover ~ #id-menu-settings-pink{
+    border-bottom : 3px solid #fc22fc;
+    border-right : 3px solid #fc22fc;
+}
+#id-menu-settings-purple1:hover{
+    border-bottom: 3px solid #7111df;
+    border-right : 3px solid #7111df;
+}
+.settings:hover ~ #id-menu-settings-purple1{
+    border-bottom : 3px solid #7111df;
+    border-right : 3px solid #7111df;
+}
+#id-menu-settings-purple2:hover{
+    border-bottom: 3px solid #c579e3;
+    border-right : 3px solid #c579e3;
+}
+.settings:hover ~ #id-menu-settings-purple2{
+    border-bottom : 3px solid #c579e3;
+    border-right : 3px solid #c579e3;
+}
+#id-menu-settings-yellow:hover{
+    border-bottom: 3px solid #ffb400;
+    border-right : 3px solid #ffb400;
+}
+.settings:hover ~ #id-menu-settings-yellow{
+    border-bottom : 3px solid #ffb400;
+    border-right : 3px solid #ffb400;
+}
+#id-menu-settings-orange:hover{
+    border-bottom: 3px solid #fa5b0f;
+    border-right : 3px solid #fa5b0f;
+}
+.settings:hover ~ #id-menu-settings-orange{
+    border-bottom : 3px solid #fa5b0f;
+    border-right : 3px solid #fa5b0f;
+}
+
+
+
+
+
+
+
+
+
+
+
+#green{
+    position: relative;
+    color: #72b626;
+    background-color: #72b626;
+    border: 0px solid ;
+    width: 20px;
+    height: 20px;
+    left: 11%;
+    border-radius: 1.5px;
+}
+
+#yellow{
+    position: relative;
+    color: #ffb400;
+    border : 0px solid ;
+    background-color: #ffb400;
+    width: 20px;
+    height: 20px;
+    left: 21%;
+    border-radius: 1.5px;
+}
+
+
+#orange{
+    position: relative;
+    color: #fa5b0f;
+    background-color: #fa5b0f;
+    border : 0px solid ;
+    width: 20px;
+    height: 20px;
+    left: 31%;
+    border-radius: 1.5px;
+}
+
+#red{
+    position: relative;
+    color: #da3939;
+    background-color: #da3939;
+    border: 0px solid ;
+    width: 20px;
+    height: 20px;
+    left: 41%;
+    border-radius: 1.5px;
+}
+
+
+
+
+
+
+
+#purple2{
+    position: relative;
+    color: #c579e3;
+    background-color: #c579e3;
+    border: 0px solid ;
+    width: 20px;
+    height: 20px;
+    top: 5%;
+    left: 11%;
+    border-radius: 1.5px;
+}
+
+#blue{
+    position: relative;
+    color: #4169e1;
+    background-color: #4169e1;
+    border: 0px solid ;
+    width: 20px;
+    height: 20px;
+    top: 5%;
+    left: 31%;
+    border-radius: 1.5px;
+}
+
+#pink{
+    position: relative;
+    color: #fc22fc;
+    background-color: #fc22fc;
+    border: 0px solid ;
+    width: 20px;
+    height: 20px;
+    top: 5%;
+    left: 21%;
+}
+
+#purple1{
+    position: relative;
+    color: #7111df;
+    background-color: #7111df;
+    border: 0px solid ;
+    width: 20px;
+    height: 20px;
+    top: 5%;
+    left: 41%;
+    border-radius: 1.5px;
+}
+

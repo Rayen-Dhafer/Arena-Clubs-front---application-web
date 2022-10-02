@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.avatar{
+
+
+    list-style: none;
+    padding: 5px;
+}
+.avatar img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}

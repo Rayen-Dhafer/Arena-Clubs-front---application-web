@@ -1,0 +1,53 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+<link href="https://kit.fontawesome.com/a076d05399.js" rel="stylesheet">
+
+
+<div class={{profil}} >
+    <!-- profil -->
+    <!-- profil -->
+    <!-- profil -->
+    <div [ngStyle]="{'background-color':   divthem()}"   [style.box-shadow]="getshadow() "class={{showprofil}}>
+
+    </div>
+
+    <!-- couverture -->
+    <!-- couverture -->
+    <!-- couverture -->
+    <div [ngStyle]="{'background-color':   divthem()}"   [style.box-shadow]="getshadow() "class={{showcouverture}} ng-init="functioncouverture()">
+        <div class="img_couverture "> 
+            {{testcouverture}}
+        <div *ngIf=" test_c() == 0 ">
+            <i class="fa fa-picture-o" aria-hidden="true" [ngStyle]="{color: getColor_couverture()}" (click)="Uploadc()"></i>
+         </div>  
+        </div>
+    </div>
+
+    <!-- classe1 -->
+    <!-- classe1 -->
+    <!-- classe1 -->
+    <div [ngStyle]="{'background-color':   divthem()}"   [style.box-shadow]="getshadow() "class={{showclasse1}}>
+
+    </div>
+
+    <!-- classe2 -->
+    <!-- classe2 -->
+    <!-- classe2 -->
+    <div [ngStyle]="{'background-color':   divthem()}"   [style.box-shadow]="getshadow() "class={{showclasse2}}>
+
+    </div>
+
+    <!-- bio -->
+    <!-- bio -->
+    <!-- bio -->
+    <div [ngStyle]="{'background-color':   divthem()}"   [style.box-shadow]="getshadow() "class={{showbio}}>
+        <ul>
+            <li *ngFor="let f  of folowers " class="avatar">
+                <img [src]="f.image ? uploadUrl+f.image : 'assets/u.jpg'" >
+                {{f.name}}
+            </li>
+        </ul>
+    </div>
+</div>
+    
+
+ 

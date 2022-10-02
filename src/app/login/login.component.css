@@ -1,0 +1,40 @@
+.row{
+   
+    width:100.65%;
+    height:100%;
+    position: fixed;
+    
+    
+
+  
+
+}
+
+
+.col-md-8-dark{   
+    
+    width:70%;
+    height:100%;
+    position:fixed;
+    left: 32.9%;
+    background-color: #242526;
+    display: grid;
+}
+
+
+.col-md-8-white{   
+    
+    width:70%;
+    height:100%;
+    position:fixed;
+    left: 32.9%;
+    background-color: #fff;
+    display: grid;
+}
+
+.vedio{
+    position:fixed;
+    left:0%;
+    width:33%;
+    
+}

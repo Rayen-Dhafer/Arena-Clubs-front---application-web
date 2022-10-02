@@ -1,0 +1,50 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+<link href="https://kit.fontawesome.com/a076d05399.js" rel="stylesheet">
+
+
+<div class="login">
+    
+  <div class="p1" [ngStyle]="{color: get_them()}"><b><span  [ngStyle]="{color: getColor()}"> MYGCORD</span>  Reset </b></div>
+  <br>
+  <br>
+  <tr>
+    <td style="width:30%" >
+      <div class="inp1">
+        <input  id="{{inpcolor1}}" type="text" placeholder="Enter Code" class="{{formcontro}}" [(ngModel)]="verif_code">
+      </div>
+  </td>
+    <td style="width:70%" >
+     <div class="inp2">
+     <b><p class="p4" [ngStyle]="{color: get_them()}">Please check your email we sent your code<br> ( 6 numbers )</p></b>
+     </div>
+   </td>
+ </tr>
+ <br>
+    <div class="inp">
+    <input  id="{{inpcolor1}}" type={{typepassword}} placeholder="Password" class="{{formcontro}}" [(ngModel)]="password1" >
+    <br>
+    <input id="{{inpcolor2}}"  type={{typepassword}}   placeholder="Confirm password" class="{{formcontro}}" [(ngModel)]="password2" >
+    <div class="pass"><i class="{{eye}}" aria-hidden="true" [ngStyle]="{color: get_them()}"  (click)="eyeFunction()" ></i></div>
+    </div>
+    <div class="butt">
+        
+    
+      <button  class="{{buttoncolor}}"  id="{{button}}" (click)="save(verif_code,password1,password2)"> 
+        <span>&nbsp;&nbsp;&nbsp;Save &nbsp;
+            <i class="fa fa-check-circle fa-1x" ></i>&nbsp;&nbsp;&nbsp;
+        </span>  </button>
+     
+    </div>
+    
+
+
+
+    <b><p class="p3" [ngStyle]="{color: get_them()}"> Cancel ?
+      <a  [routerLink]="['/mylogin']" class="a" [ngStyle]="{color: getColor()}">
+      <b> Back </b>
+      </a></p></b>
+    
+    </div>
+    
+
+ 

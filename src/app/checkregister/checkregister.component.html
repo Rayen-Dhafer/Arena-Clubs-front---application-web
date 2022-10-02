@@ -1,0 +1,57 @@
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+<link href="https://kit.fontawesome.com/a076d05399.js" rel="stylesheet">
+
+
+<div class="login">
+    
+    <div class="p1" [ngStyle]="{color: getd_w()}"><b><span  [ngStyle]="{color: getColor()}"> MYGCORD</span>  Sign-Up</b></div>
+
+    <b><p class="p2" [ngStyle]="{color: getd_w()}"> Enter security code</p></b>
+   <br>
+   <br>
+
+ 
+
+   
+     <tr>
+       <td style="width:30%" >
+         <div class="inp1">
+            
+           <input  id="{{inpcolor1}}" type="text" placeholder="Enter Code" class="{{formcontro}}" [(ngModel)]="verif_code">
+         </div>
+     </td>
+       <td style="width:70%" >
+        <div class="inp2">
+        <b><p class="p4" [ngStyle]="{color: getd_w()}">Please check your email we sent your code <br> ( 6 numbers )</p></b>
+        </div>
+      </td>
+    </tr>
+
+
+
+
+    <br>
+
+       <br>
+   
+    <div class="butt">
+        
+    
+         <button  class="{{buttoncolor}}"  id="{{button}}" (click)="Testcheck(verif_code)"> 
+            <span>&nbsp;&nbsp;&nbsp;Sign&nbsp;Up&nbsp; &nbsp;
+                <i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+            </span>  </button>
+       
+     
+    </div>
+    
+    <b><p class="p3" [ngStyle]="{color: getd_w()}"> Didn't get a code?
+     <a [routerLink]="['/mylogin']" class="a" [ngStyle]="{color: getColor()}" >
+      <b>Cancel </b>
+     </a></p></b>
+    
+    </div>
+    
+
+ 

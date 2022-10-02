@@ -1,0 +1,55 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+<link href="https://kit.fontawesome.com/a076d05399.js" rel="stylesheet">
+
+
+<div class="login">
+    
+    <div class="p1" [ngStyle]="{color: them}"><b><span  [ngStyle]="{color: getColor()}"> MYGCORD</span>  Log-In </b></div>
+
+    
+    <b><p class="p2" [ngStyle]="{color: them}"> GREAT TO HAVE YOU BACK!</p></b><br>
+
+    
+    
+    <div class="inp">
+    <input  id="{{inpcolor1}}" type="email" placeholder="Email" class="{{formcontro}}" [(ngModel)]="email"  >
+    <br>
+    <input id="{{inpcolor2}}"  type={{typepassword}}   placeholder="Password" class="{{formcontro}}" [(ngModel)]="password" >
+    <div class="pass"><i class="{{eye}}" aria-hidden="true" [ngStyle]="{color: get_them()}"  (click)="eyeFunction()" ></i></div>
+    </div>
+    <div class="butt">
+        
+    
+         <button  class="{{buttoncolor}}"  id="{{button}}"  (click)="TestSignIn(email , password)"> 
+            <span>&nbsp;&nbsp;&nbsp;Login &nbsp;
+                <i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                
+            </span>  </button>
+     
+    </div>
+    
+
+
+
+        
+            <b><p class="p3" [ngStyle]="{color: get_them()}">Forgot password ?
+                <a [routerLink]="['']" class="a" [ngStyle]="{color: getColor()}" (click)="TestReset(email)">
+                <b>Reset</b>
+                </a></p></b>
+       
+  
+
+      
+       
+
+
+
+    <b><p class="p4" [ngStyle]="{color: get_them()}">Don't have an account ?
+    <a  [routerLink]="['/register']" class="a" [ngStyle]="{color: getColor()}" >
+    <b>Register now</b>
+    </a></p></b>
+    
+    </div>
+    
+
+ 
